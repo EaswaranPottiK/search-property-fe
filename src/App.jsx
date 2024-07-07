@@ -10,8 +10,8 @@ const App = () => {
   console.log(likedHouses)
   return (
     <div >
-    <Header likedHouses={likedHouses} data={data}/>
-    <Search/>
+    <Header likedHouses={likedHouses} setFilteredData={setFilteredData} data={data}/>
+    <Search setFilteredData={setFilteredData} data={data}/>
     <Body filteredData = {filteredData} likedHouses={likedHouses} setLikedHouses ={setLikedHouses}/>
     </div>
   )

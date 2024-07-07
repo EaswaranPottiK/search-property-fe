@@ -3,19 +3,22 @@ import React, { useState } from 'react'
 import { IoMdHome } from "react-icons/io";
 import { IconContext } from "react-icons";
 
-const Header = () => {
+const Header = (prop) => {
   const [houseNameFilter,setHouseNameFilter] = useState('')
   function likedHouses(){
-    const data = prop.data.filter(()=>{
-      prop.likedHouses
+    const data = prop.data.filter((x)=>{
+      return prop.likedHouses.indexOf(x.name)>-1
     })
-
+    prop.setFilteredData(data)
+  }
+  function homeButton(){
+    prop.setFilteredData(prop.data)
   }
   return (
     <div className='bg-gray-100 flex flex-col justify-between px-20 py-5 md:flex-row'>
 
       <IconContext.Provider value={{ color: "green" , size:'2.5em'}}>
-        <IoMdHome />
+        <IoMdHome onClick={homeButton} className='cursor-pointer'/>
       </IconContext.Provider>
 
       <p className='text-[#6C757D] text-4xl font-semibold'>Search properties to rent</p>

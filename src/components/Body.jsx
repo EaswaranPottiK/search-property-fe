@@ -17,12 +17,18 @@ const Body = (prop) => {
     }
     else{
       //red to brown
-      while(prop.likedHouses.indexOf(houseName)>-1){ //BUG: even after house is removed, the name of house is present in array 
-        prop.setLikedHouses(prop.likedHouses.splice(prop.likedHouses.indexOf(houseName),1)) 
+      let indexOfIteamToBeRemoved= prop.likedHouses.indexOf(houseName)
+      if(indexOfIteamToBeRemoved>-1){ 
+        console.log("indexOfIteamToBeRemoved",indexOfIteamToBeRemoved)
+        const updatedLikedHouses = prop.likedHouses
+        updatedLikedHouses.splice(indexOfIteamToBeRemoved,1)
+        console.log("updated houses ",updatedLikedHouses)
+        prop.setLikedHouses(updatedLikedHouses) 
       }
       e.target.parentElement.style.color = 'rgb(108, 117, 125)'
     }
   }
+  console.log(prop.likedHouses)
   return (
     <div className='mx-[10%] mt-5 flex flex-wrap gap-20'>
         {/* one card */}
