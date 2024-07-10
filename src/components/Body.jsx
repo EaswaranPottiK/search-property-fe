@@ -19,16 +19,14 @@ const Body = (prop) => {
       //red to brown
       let indexOfIteamToBeRemoved= prop.likedHouses.indexOf(houseName)
       if(indexOfIteamToBeRemoved>-1){ 
-        console.log("indexOfIteamToBeRemoved",indexOfIteamToBeRemoved)
         const updatedLikedHouses = prop.likedHouses
         updatedLikedHouses.splice(indexOfIteamToBeRemoved,1)
-        console.log("updated houses ",updatedLikedHouses)
         prop.setLikedHouses(updatedLikedHouses) 
       }
       e.target.parentElement.style.color = 'rgb(108, 117, 125)'
     }
   }
-  console.log(prop.likedHouses)
+  
   return (
     <div className='mx-[10%] mt-5 flex flex-wrap gap-20'>
         {/* one card */}

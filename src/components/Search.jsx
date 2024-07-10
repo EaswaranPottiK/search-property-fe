@@ -28,13 +28,12 @@ const Search = (prop) => {
             })
         }
 
-        if (propertyType){
+        if (propertyType !='All'){
             data = data.filter((x)=>{
-                console.log(x.type.split(' ').indexOf(propertyType.toLocaleLowerCase()))
-                return x.type.split(' ').indexOf(propertyType.toLocaleLowerCase()) > -1
+                if(x.type.split(' ').indexOf(propertyType.toLocaleLowerCase()) > -1) 
+                return x
             })
         }
-        console.log("filtered data ",data)
         prop.setFilteredData(data)
     }
 

@@ -7,7 +7,7 @@ import data from './components/data'
 const App = () => {
   const [filteredData, setFilteredData] = useState(data)
   const [likedHouses, setLikedHouses] = useState([])
-  console.log(likedHouses)
+  
   return (
     <div >
     <Header likedHouses={likedHouses} setFilteredData={setFilteredData} data={data}/>

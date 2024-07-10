@@ -21,8 +21,9 @@ const Header = (prop) => {
     }
     else{
       let data = prop.data.filter((x)=>{
-        x.name == houseNameSearch
+        return x.name.toLowerCase() == houseNameSearch.toLowerCase()
       })
+      prop.setFilteredData(data)
     }
   }
   return (
