@@ -18,7 +18,15 @@ const Search = (prop) => {
             const newDate = date.split('-')
             data = data.filter((x)=>{
                 //day wise && month wise  
-                if(x.info.date[1] <=Number(newDate[2]) && x.info.date[0] <=Number(newDate[1]))  {return x}
+                // 
+                if(x.info.date[0] <Number(newDate[1])) {
+                   return x
+                }
+                else if (x.info.date[0] === Number(newDate[1])){
+                    if (Number(x.info.date[1]) <= Number(newDate[2])){
+                        return x
+                    }
+                }
             })
             
         }
