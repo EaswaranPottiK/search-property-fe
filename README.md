@@ -20,5 +20,14 @@ Or by price range
 Or a combination of above filters eg i have filtered using city and date
 ![image](https://github.com/user-attachments/assets/d1a33e9d-6ee9-4505-b1de-5d96211af485)
 
+Also the user can directly search house using correct house name
+![alt text](image.png)
+
+Suppose you can confused between 2 or more houses to choose from them you can click on hear icon and add them to favorite list so that you compare them after clicking liked button on top right side of screen 
+![alt text](image-1.png)
+![alt text](image-2.png)
 
 
+Additional features:
+To reset the page ie clear out all the filters you can simply press home icon on top left portion of your screen 
+![alt text](image-3.png)
