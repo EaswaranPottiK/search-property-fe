@@ -179,7 +179,7 @@ const data =
         bed: 3,
         bathrooms: 1,
         area: "36x2",
-        date: [1, 31]
+        date: [10, 6]
     },
     type: "All pg"
 }, {
@@ -192,7 +192,7 @@ const data =
         bed: 2,
         bathrooms: 6,
         area: "76x2",
-        date: [1, 31]
+        date: [1, 20]
     },
     type: "All farm-house"
 }, {
@@ -205,7 +205,7 @@ const data =
         bed: 4,
         bathrooms: 4,
         area: "100x20",
-        date: [1, 31]
+        date: [1, 21]
     },
     type: "All villa"
 }, {
