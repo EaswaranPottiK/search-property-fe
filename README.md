@@ -33,3 +33,12 @@ Suppose you can confused between 2 or more houses to choose from them you can cl
 Additional features:
 To reset the page ie clear out all the filters you can simply press home icon on top left portion of your screen 
 ![alt text](image-3.png)
+
+
+Learning from the project: 
+I was not much clear with filter method, but after making this project i have fully understood filter method 
+
+Future scope of this project:
+The web app is only have frontend: So in future i want to make it a full stack app where
+* Admins can modify the property list - CRUD operation
+* User login /log out functionality 
