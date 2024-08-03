@@ -39,6 +39,6 @@ Learning from the project:
 I was not much clear with filter method, but after making this project i have fully understood filter method 
 
 Future scope of this project:
-The web app is only have frontend: So in future i want to make it a full stack app where
+The web app is only having frontend: So in future i want to make it a full stack app where
 * Admins can modify the property list - CRUD operation
 * User login /log out functionality 
